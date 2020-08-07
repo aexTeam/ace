@@ -1,0 +1,123 @@
+
+.homeContent {
+}
+.part1 {
+  width: 1200px;
+  margin: 0 auto;
+  height: 744px;
+  padding-top: 155px;
+}
+.info {
+  font-size:28px;
+  font-weight:bold;
+  line-height: 42px;
+  color: white;
+  text-align: right;
+}
+.title {
+  display: flex;
+  justify-content: flex-end;
+  width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 46px 0 30px;
+  text-align: right;
+  font-size:32px;
+  font-weight:bold;
+  color: #282828;
+  .line {
+    display: inline-block;
+    margin: 0 15px;
+    width:143px;
+    height:8px;
+    background:rgba(40,40,40,1);
+  }
+}
+.title.left {
+  justify-content: flex-start;
+}
+.part2 {
+  background-color: rgb(14 154 146);
+  padding-bottom: 36px;
+  box-shadow: 0 -9px 15px -9px #000 inset;
+  .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 332px);
+    justify-content: center;
+    grid-gap: 60px;
+    width: 100%;
+    height: 680px;
+    background-image: url(../../assets/feature-bg.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    padding-top: 90px;
+    >div:nth-child(1) {
+      background-image: url("../../assets/feature-1.png");
+    }
+    >div:nth-child(2) {
+      background-image: url("../../assets/feature-2.png");
+    }
+    >div:nth-child(3) {
+      background-image: url("../../assets/feature-3.png");
+    }
+  }
+  .title {
+    color: white;
+    justify-content: flex-start;
+    .line {
+      background: white;
+    }
+  }
+}
+.featureItem {
+  display: flex;
+  width: 332px;
+  height: 432px;
+  padding-top: 108px;
+  flex-direction: column;
+  >div:first-child {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 68px;
+      height: 68px;
+    }
+  }
+  >div:last-child {
+    padding: 0 64px;
+    line-height: 1.2;
+  }
+}
+
+.part3 {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 65px;
+  }
+  >div {
+    font-size:24px;
+    font-weight:bold;
+    color:rgba(4,132,128,1);
+    line-height: 1.6;
+  }
+}
+
+.part4 {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  img {
+    margin-left: 150px;
+  }
+  >div {
+    font-size:34px;
+    font-weight:600;
+    color:rgba(4,132,128,1);
+    line-height: 1.63;
+  }
+}
+
