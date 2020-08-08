@@ -22,37 +22,37 @@ export default defineConfig({
     hmr: true,
   },
   locale: {},
-  chunks: ['vendors', 'umi', 'antd'],
+  // chunks: ['vendors', 'umi', 'antd'],
   chainWebpack: function (config, { webpack }) {
-    config.merge({
-      optimization: {
-        minimize: true,
-        splitChunks: {
-          chunks: 'all',
-          minSize: 1000,
-          minChunks: 1,
-          automaticNameDelimiter: '.',
-          cacheGroups: {
-            vendor: {
-              name: 'vendors',
-              test: /^.*node_modules[\\/](?!lodash|antd|moment).*$/,
-              priority: 10,
-              chunks: 'all',
-            },
-            antd: {
-              name: 'antd',
-              test: /[\\/]node_modules[\\/]antd[\\/]/,
-              priority: 10,
-              chunks: 'all',
-            },
-          },
-        },
-      }
-    });
+    // config.merge({
+    //   optimization: {
+    //     minimize: true,
+    //     splitChunks: {
+    //       chunks: 'all',
+    //       minSize: 1000,
+    //       minChunks: 1,
+    //       automaticNameDelimiter: '.',
+    //       cacheGroups: {
+    //         vendor: {
+    //           name: 'vendors',
+    //           test: /^.*node_modules[\\/](?!lodash|antd|moment).*$/,
+    //           priority: 10,
+    //           chunks: 'all',
+    //         },
+    //         antd: {
+    //           name: 'antd',
+    //           test: /[\\/]node_modules[\\/]antd[\\/]/,
+    //           priority: 10,
+    //           chunks: 'all',
+    //         },
+    //       },
+    //     },
+    //   }
+    // });
 
     // 过滤掉momnet的那些不使用的国际化文件
-    config.plugin("replace").use(require("webpack").ContextReplacementPlugin).tap(() => {
-      return [/moment[/\\]locale$/, /zh-cn/];
-    });
+    // config.plugin("replace").use(require("webpack").ContextReplacementPlugin).tap(() => {
+    //   return [/moment[/\\]locale$/, /zh-cn/];
+    // });
   },
 });

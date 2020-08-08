@@ -5,9 +5,19 @@
 }
 
 .pageHome {
+  position: relative;
   background: url("../assets/home-banner.png") no-repeat top;
   background-size: 100% 805px;
   font-family:Titillium Web;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1601px;
+    background-image: url("../assets/feature-bg.png");
+    z-index: -1;
+  }
 }
 .page404 > div:first-child,
 .page404 > div:last-child {

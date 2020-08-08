@@ -1,5 +1,6 @@
 
 .homeContent {
+
 }
 .part1 {
   width: 1200px;
@@ -37,8 +38,10 @@
   justify-content: flex-start;
 }
 .part2 {
-  background-color: rgb(14 154 146);
-  padding-bottom: 36px;
+  //background-color: rgb(14 154 146);
+  //background-image: url("../../assets/feature-bg.png");
+  //background-position: bottom;
+  //padding-bottom: 36px;
   box-shadow: 0 -9px 15px -9px #000 inset;
   .inner {
     display: grid;
@@ -47,7 +50,7 @@
     grid-gap: 60px;
     width: 100%;
     height: 680px;
-    background-image: url(../../assets/feature-bg.png);
+    background-image: url("../../assets/feature-map.png");
     background-repeat: no-repeat;
     background-position: center 0;
     padding-top: 90px;
@@ -95,13 +98,20 @@
   display: flex;
   align-items: center;
   img {
-    margin-right: 65px;
+    //margin-right: 65px;
   }
   >div {
     font-size:24px;
     font-weight:bold;
     color:rgba(4,132,128,1);
     line-height: 1.6;
+  }
+  >div:first-child {
+    width: 626px;
+    height: 531px;
+    background: url("../../assets/vision-bg.png");
+    padding: 7px 32px;
+    margin-right: 65px;
   }
 }
 
@@ -120,4 +130,95 @@
     line-height: 1.63;
   }
 }
+.part5 {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 25px;
+  >div {
+    display: flex;
+    flex-direction: column;
+    font-size:19px;
+    font-weight:600;
+    line-height:30px;
+    text-align: center;
+    img {
+      margin-bottom: 12px;
+      width: 267px;
+      height: 311px;
+    }
+  }
+  ul {
+    position: relative;
+    font-size:20px;
+    font-weight:400;
+    line-height:40px;
+    list-style: none;
+    padding-left: 26px;
+    li {
+      position: relative;
+      padding-left: 23px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        background: #000000;
+        left: 0;
+        top: 14px;
+      }
+      a {
+        margin-left: 8px;
+      }
+    }
+  }
+}
 
+.nameLine {
+  width: 1200px;
+  margin: 0 auto;
+  font-size:19px;
+  font-weight:600;
+  color:rgba(0,0,0,1);
+  line-height:30px;
+  overflow: hidden;
+  span {
+    float: right;
+    text-align: center;
+  }
+}
+
+.part6 {
+  width: 1200px;
+  margin: 0 auto;
+  ul {
+    font-size:20px;
+    font-weight:400;
+    line-height:40px;
+    list-style: none;
+    padding-left: 26px;
+    li {
+      position: relative;
+      padding-left: 23px;
+      font-size: 22px;
+      color: #282828;
+      font-weight: bold;
+      div {
+        color: #282828;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        background: #000000;
+        left: 0;
+        top: 14px;
+      }
+    }
+  }
+}

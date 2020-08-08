@@ -8,7 +8,7 @@ import FeatureIcon3 from '@/assets/feature-icon-3.png'
 import Team1 from '@/assets/team-1.png'
 import Team2 from '@/assets/team-2.png'
 import Team3 from '@/assets/team-3.png'
-import VisionBg from '@/assets/vision-bg.png'
+import VisionImg from '@/assets/vision.png'
 import Demo from '@/assets/demo.png'
 import styles from './index.less';
 
@@ -27,10 +27,6 @@ const Index: React.FC<TestProps> = props => {
     <div className={styles.homeContent}>
       <div className={styles.part1}>
         <div className={styles.info}>
-          <div>
-            {/*<img src={Demo} alt=""/>*/}
-            {intl.formatMessage({id: 'home.test'})}
-          </div>
           AEX is dedicated to support<br/>
           the growth and maturation of<br/>
           China Is rapidly developing<br/>
@@ -75,9 +71,11 @@ const Index: React.FC<TestProps> = props => {
 
       <div className={styles.title}><span className={styles.line}></span>Our Vision for China Energy Markets</div>
       <div className={styles.part3}>
-        <img src={VisionBg} alt=""/>
         <div>
-          <div style={{marginBottom: '93px'}}>
+          <img src={VisionImg} alt=""/>
+        </div>
+        <div>
+          <div style={{marginBottom: '90px'}}>
             In mature power markets, the spot market is embedded in an ecosystem that lets market participants manage risk and run efficient power trading.
           </div>
           <div>
@@ -94,12 +92,92 @@ const Index: React.FC<TestProps> = props => {
         <img src={Team1} alt=""/>
       </div>
 
-      <div className={`${styles.title} ${styles.left}`}><span className={styles.line}></span>Management Team</div>
-      <div className={styles.part5}>
+      <div className={`${styles.title}`} style={{paddingBottom: '58px'}}><span className={styles.line}></span>Management Team</div>
+      <div className={styles.part5} style={{marginBottom: '35px'}}>
         <div>
           <img src={Team2} alt=""/>
+          <div>
+            Jeff Huang / 黄杰夫 <br/>Founder and CEO
+          </div>
+        </div>
+        <ul>
+          <li>
+            Former Managing Director Greater China for international commodity exchange 2010-2016, VP Asia for Chicago Climate Exchange (CCX)
+          </li>
+          <li>
+            10+ years experience in cross-border M&A and Joint Venture
+            Tianjin Climate Exchange (CCX & CNPC/PetroChina), Citic & Calyon (SocGen) futures brokerage
+            joint venture, SunGard Fintech acquisition
+          </li>
+          <li>
+            Former Chief Advisor for Chongqing Gas Exchange
+          </li>
+          <li>
+            Well-known expert in China energy and CO2 markets, frequent speaker and
+            lecturer in conferences and in universities, regular presence on
+            <a href="">Caixin opinion, Weibo</a>
+          </li>
+        </ul>
+      </div>
+
+      <div className={styles.part5}>
+        <ul style={{paddingTop: '20px'}}>
+          <li>
+            Former spot power trader and asset manager for Swiss generator (nuclear and hydro) and
+            supplier (direct retail, resellers, industrial consumers)
+          </li>
+          <li>
+            Consultant in energy industry: trading, risk management, processes
+          </li>
+          <li>
+            Senior consultant in data analysis and visualization
+          </li>
+          <li>
+            Former derivatives trader for Credit Suisse Investment Banking
+          </li>
+          <li>
+            Lived and worked in Shanghai and Singapore for 5 years, speaks fluent Chinese
+          </li>
+          <li>
+            <a href="">LinkedIn</a>
+          </li>
+        </ul>
+        <div style={{padding: '0px 40px 0px 20px'}}>
+          <img src={Team3} alt=""/>
+          <div>
+            Jonas Nart / 纳杰安 -
+          </div>
         </div>
       </div>
+      <div className={styles.nameLine}>
+        <span>Founding Partner VP Power Markets <br/> and Data Analytics</span>
+      </div>
+
+      <div className={`${styles.title} ${styles.left}`}>Board of International Advisors<span className={styles.line}></span></div>
+      <div className={styles.part6}>
+        <ul style={{paddingTop: '0px'}}>
+          <li>
+            Richard L. Sandor, Chairman
+            <div>
+              Founder & CEO of American Financial Exchange (AFX), founder of Chicago Climate Exchange; former chief economist at
+              CBOT; distinguished professor, lecturer, and book author on topics of financial innovation and environmental markets.
+            </div>
+          </li>
+          <li>
+            Ming Ge 葛明
+            <div>
+              Former chairman of Ernst & Young Huaming (China), current member of board of directors at Ping An Group
+            </div>
+          </li>
+          <li>
+            Ming Ge 葛明
+            <div>
+              Former chairman of Ernst & Young Huaming (China), current member of board of directors at Ping An Group
+            </div>
+          </li>
+        </ul>
+      </div>
+
 
       <div>
         {/*<img src={Demo} alt=""/>*/}
