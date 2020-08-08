@@ -142,7 +142,7 @@ const Index: React.FC<TestProps> = props => {
             <a href="">LinkedIn</a>
           </li>
         </ul>
-        <div style={{padding: '0px 40px 0px 20px'}}>
+        <div style={{padding: '0px 55px 0px 10px'}}>
           <img src={Team3} alt=""/>
           <div>
             Jonas Nart / 纳杰安 -
@@ -170,19 +170,25 @@ const Index: React.FC<TestProps> = props => {
             </div>
           </li>
           <li>
-            Ming Ge 葛明
+            Guojing Tang
             <div>
-              Former chairman of Ernst & Young Huaming (China), current member of board of directors at Ping An Group
+              CEO at Huatai Great Wall Capital (Shanghai), former commodity trader (US power, gas, oil) for Morgan Stanley, RBS, British
+              Gas, Lehman
+            </div>
+          </li>
+          <li>
+            Thomas Reithofer
+            <div>
+              Head of energy division & member of executive board at CKW (Swiss utility), chairman for supplier, board member for hydro
+              generators
             </div>
           </li>
         </ul>
       </div>
 
+      <div className={styles.careerTitle}>Career</div>
 
-      <div>
-        {/*<img src={Demo} alt=""/>*/}
-        {intl.formatMessage({id: 'home.test'})}
-      </div>
+
     </div>
   );
 };
