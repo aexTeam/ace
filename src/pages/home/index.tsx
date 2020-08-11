@@ -5,6 +5,9 @@ import HomeArrow from '@/assets/home-arrow.png';
 import FeatureIcon1 from '@/assets/feature-icon-1.png';
 import FeatureIcon2 from '@/assets/feature-icon-2.png';
 import FeatureIcon3 from '@/assets/feature-icon-3.png';
+import FeatureContent1 from '@/assets/feature-content-1.png';
+import FeatureContent2 from '@/assets/feature-content-2.png';
+import FeatureContent3 from '@/assets/feature-content-3.png';
 import Team1 from '@/assets/team-1.png';
 import Team2 from '@/assets/team-2.png';
 import Team3 from '@/assets/team-3.png';
@@ -63,8 +66,7 @@ const Index: React.FC<TestProps> = props => {
               <img src={FeatureIcon1} alt="" />
             </div>
             <div>
-              what are you nongshalei what are you nongshalei what are you
-              nongshalei what are you nongshalei what are you nongshalei
+              <img src={FeatureContent1} alt=""/>
             </div>
           </div>
 
@@ -73,8 +75,7 @@ const Index: React.FC<TestProps> = props => {
               <img src={FeatureIcon2} alt="" />
             </div>
             <div>
-              what are you nongshalei what are you nongshalei what are you
-              nongshalei what are you nongshalei what are you nongshalei
+              <img src={FeatureContent2} alt=""/>
             </div>
           </div>
 
@@ -83,8 +84,7 @@ const Index: React.FC<TestProps> = props => {
               <img src={FeatureIcon3} alt="" />
             </div>
             <div>
-              what are you nongshalei what are you nongshalei what are you
-              nongshalei what are you nongshalei what are you nongshalei
+              <img src={FeatureContent3} alt=""/>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ const Index: React.FC<TestProps> = props => {
           <li>
             Well-known expert in China energy and CO2 markets, frequent speaker
             and lecturer in conferences and in universities, regular presence on
-            <a href="">Caixin opinion, Weibo</a>
+            <a href="http://opinion.caixin.com/huangjiefu_mjxx/" target="_blank">Caixin opinion, Weibo</a>
           </li>
         </ul>
       </div>
@@ -171,7 +171,7 @@ const Index: React.FC<TestProps> = props => {
             fluent Chinese
           </li>
           <li>
-            <a href="">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/paola-valinotti/" target="_blank">LinkedIn</a>
           </li>
         </ul>
         <div style={{ padding: '0px 55px 0px 10px' }}>

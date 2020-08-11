@@ -1,6 +1,8 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  base: '/aex/',
+  publicPath: '/aex/',
   antd: {},
   dynamicImport: {},
   nodeModulesTransform: {
