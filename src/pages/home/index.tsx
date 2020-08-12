@@ -99,13 +99,10 @@ const Index: React.FC<TestProps> = props => {
         </div>
         <div>
           <div style={{ marginBottom: '90px' }}>
-            In mature power markets, the spot market is embedded in an ecosystem
-            that lets market participants manage risk and run efficient power
-            trading.
+            In mature power and emissions markets, the spot market is embedded in an ecosystem that lets market participants manage risk and run efficient energy trading.
           </div>
           <div>
-            AEX is committed to help build this ecosystem to contribute to the
-            success of China power markets.
+            AEX is committed to help build this ecosystem to contribute to the success of China energy markets.
           </div>
         </div>
       </div>
@@ -204,6 +201,12 @@ const Index: React.FC<TestProps> = props => {
             <div>
               Former chairman of Ernst & Young Huaming (China), current member
               of board of directors at Ping An Group
+            </div>
+          </li>
+          <li>
+            Ronald Oppenheimer
+            <div>
+              Former general counsel for Vitol Group, Merrill Lynch, NYMEX; board/committee member for CFTC, ICE, NFA
             </div>
           </li>
           <li>
