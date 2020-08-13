@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { connect, Dispatch, useIntl } from 'umi';
+// import { connect, Dispatch, useIntl } from 'umi';
+import { connect, Dispatch } from 'umi';
 import { ConnectState } from '@/models/connect';
 import HomeArrow from '@/assets/home-arrow.png';
 import FeatureIcon1 from '@/assets/feature-icon-1.png';
@@ -31,7 +32,7 @@ interface TestProps {
 
 const Index: React.FC<TestProps> = props => {
   const { dispatch, loading } = props;
-  const intl = useIntl();
+  // const intl = useIntl();
 
   useEffect(() => {}, []);
 

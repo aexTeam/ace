@@ -3,6 +3,7 @@ import { defineConfig } from 'umi';
 export default defineConfig({
   base: '/aex/',
   publicPath: '/aex/',
+  hash: true,
   antd: {},
   dynamicImport: {},
   nodeModulesTransform: {
@@ -23,7 +24,7 @@ export default defineConfig({
   dva: {
     hmr: true,
   },
-  locale: {},
+  // locale: {},
   // chunks: ['vendors', 'umi', 'antd'],
   chainWebpack: function (config, { webpack }) {
     // config.merge({
@@ -53,8 +54,8 @@ export default defineConfig({
     // });
 
     // 过滤掉momnet的那些不使用的国际化文件
-    // config.plugin("replace").use(require("webpack").ContextReplacementPlugin).tap(() => {
-    //   return [/moment[/\\]locale$/, /zh-cn/];
-    // });
+    config.plugin("replace").use(require("webpack").ContextReplacementPlugin).tap(() => {
+      return [/moment[/\\]locale$/, /zh-cn/];
+    });
   },
 });
