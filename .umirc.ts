@@ -4,7 +4,7 @@ export default defineConfig({
   base: '/aex/',
   publicPath: '/aex/',
   hash: true,
-  antd: {},
+  // antd: {},
   dynamicImport: {},
   nodeModulesTransform: {
     type: 'none',
@@ -20,13 +20,15 @@ export default defineConfig({
     },
     { component: '@/pages/404/index'},
   ],
-  manifest: {},
-  dva: {
-    hmr: true,
-  },
+  // manifest: {},
+  // dva: {
+  //   hmr: true,
+  // },
   // locale: {},
+  ignoreMomentLocale: true, // 过滤掉momnet的那些不使用的国际化文件
+  // 拆包时慎重下，可能体积会更大些
   // chunks: ['vendors', 'umi', 'antd'],
-  chainWebpack: function (config, { webpack }) {
+  // chainWebpack: function (config, { webpack }) {
     // config.merge({
     //   optimization: {
     //     minimize: true,
@@ -52,10 +54,7 @@ export default defineConfig({
     //     },
     //   }
     // });
+  // },
 
-    // 过滤掉momnet的那些不使用的国际化文件
-    config.plugin("replace").use(require("webpack").ContextReplacementPlugin).tap(() => {
-      return [/moment[/\\]locale$/, /zh-cn/];
-    });
-  },
+  request: false, // plugin-request 中有用antd, 禁用request防止加载antd
 });
