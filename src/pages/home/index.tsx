@@ -99,10 +99,10 @@ const Index: React.FC<TestProps> = props => {
         </div>
         <div>
           <div style={{ marginBottom: '90px' }}>
-            In mature power and emissions markets, the spot market is embedded in an ecosystem that lets market participants manage risk and run efficient energy trading.
+            In mature emissions and power markets, the spot market is embedded in an ecosystem that lets market participants manage risk and run efficient trading operations.
           </div>
           <div>
-            AEX is committed to help build this ecosystem to contribute to the success of China energy markets.
+            AEX is committed to help build this ecosystem to contribute to the success of China emissions and power markets.
           </div>
         </div>
       </div>
