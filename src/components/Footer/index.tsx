@@ -3,7 +3,7 @@ import styles from './index.less';
 
 export default () => {
   return (
-    <div className={styles.footerWrapper}>
+    <div className={styles.footerWrapper} id="contact">
       <div>
         <span>CONTACT US</span>
         <span style={{ margin: '0 30px' }}>Email</span>

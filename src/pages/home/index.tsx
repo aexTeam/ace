@@ -50,16 +50,17 @@ const Index: React.FC<TestProps> = props => {
         </div>
         <div className={styles.arrowWrap}>
           <img src={HomeArrow} alt="" />
-          <img src={Line1} alt="" />
-          <img src={Line2} alt="" />
-          <img src={Line3} alt="" />
-          <img src={Line4} alt="" />
+          {/*<img src={Line1} alt="" />*/}
+          {/*<img src={Line2} alt="" />*/}
+          {/*<img src={Line3} alt="" />*/}
+          {/*<img src={Line4} alt="" />*/}
         </div>
       </div>
 
+
       <div className={styles.part2}>
-        <div className={styles.title} style={{ paddingLeft: '70px' }}>
-          To achieve this we want to <span className={styles.line}></span>
+        <div className={`${styles.title} ${styles.left}`} style={{ paddingTop: '150px' }}>
+          To achieve this we want to <span className={styles.arrow}></span>
         </div>
         <div className={styles.inner}>
           <div className={styles.featureItem}>
@@ -91,8 +92,8 @@ const Index: React.FC<TestProps> = props => {
         </div>
       </div>
 
-      <div className={styles.title}>
-        <span className={styles.line}></span>Our Vision for China Energy Markets
+      <div className={styles.title} style={{paddingTop: '70px'}} id="markets">
+        <span className={styles.arrow}></span>Our Vision for China Energy Markets
       </div>
       <div className={styles.part3}>
         <div>
@@ -109,19 +110,18 @@ const Index: React.FC<TestProps> = props => {
       </div>
 
       <div className={`${styles.title} ${styles.left}`}>
-        Team Introduction<span className={styles.line}></span>
+        Team Introduction<span className={styles.arrow}></span>
       </div>
       <div className={styles.part4}>
-        <div style={{ paddingLeft: '86px' }}>
-          Our team and advisors combine a full range of relevant experience and
-          skills with a strong network that we can leverage to service our
-          customers.
+
+        <div style={{ paddingLeft: '60px' }}>
+          Our team and advisors combine a full range of relevant experience and skills with a strong network that we can leverage to service our customers.
         </div>
         <img src={Team1} alt="" />
       </div>
 
-      <div className={`${styles.title}`} style={{ paddingBottom: '58px' }}>
-        <span className={styles.line}></span>Management Team
+      <div className={`${styles.title}`} style={{ paddingBottom: '58px' }} id="team">
+        <span className={styles.arrow}></span>Management Team
       </div>
       <div className={styles.part5} style={{ marginBottom: '35px' }}>
         <div>
@@ -145,7 +145,8 @@ const Index: React.FC<TestProps> = props => {
           <li>
             Well-known expert in China energy and CO2 markets, frequent speaker
             and lecturer in conferences and in universities, regular presence on
-            <a href="http://opinion.caixin.com/huangjiefu_mjxx/" target="_blank">Caixin opinion, Weibo</a>
+            <a href="http://opinion.caixin.com/huangjiefu_mjxx/" target="_blank">Caixin opinion, </a>
+            <a href="http://opinion.caixin.com/huangjiefu_mjxx/" target="_blank">Weibo</a>
           </li>
         </ul>
       </div>
@@ -183,8 +184,8 @@ const Index: React.FC<TestProps> = props => {
         </span>
       </div>
 
-      <div className={`${styles.title} ${styles.left}`}>
-        Board of International Advisors<span className={styles.line}></span>
+      <div className={`${styles.title} ${styles.left}`} id="iba">
+        Board of International Advisors<span className={styles.arrow}></span>
       </div>
       <div className={styles.part6}>
         <ul style={{ paddingTop: '0px' }}>
@@ -228,8 +229,8 @@ const Index: React.FC<TestProps> = props => {
         </ul>
       </div>
 
-      <div className={styles.careerTitle}>
-        <span>Career</span>
+      <div className={styles.careerTitle} id="career">
+        <span>Join Our Team</span>
       </div>
       <div className={styles.careerContent}>
         We are looking for candidates with entrepreneurial mindset to join our

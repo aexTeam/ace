@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, setLocale } from 'umi';
+import { NavLink } from 'umi';
 import Logo from '@/assets/logo.png';
 import ChinaFlag from '@/assets/china.png';
 import UkFlag from '@/assets/english.png';
@@ -11,35 +11,42 @@ export default () => {
     // setLocale(lang, false)
   };
 
+  const handleGoPosition = (y: number) => {
+    window.scrollTo({
+      top: y,
+      behavior: "smooth"
+    })
+  }
+
   return (
     <div className={styles.headerWrapper}>
       <div className={styles.flagWrap}>
-        <NavLink exact to="/">
+        <a onClick={() => handleGoPosition(0)}>
           <img className={styles.logo} src={Logo} alt="" />
-        </NavLink>
-        <img onClick={() => handleChangeLang('zh-CN')} src={ChinaFlag} alt="" />
-        <img onClick={() => handleChangeLang('en-US')} src={UkFlag} alt="" />
+        </a>
+        {/*<img onClick={() => handleChangeLang('zh-CN')} src={ChinaFlag} alt="" />*/}
+        {/*<img onClick={() => handleChangeLang('en-US')} src={UkFlag} alt="" />*/}
       </div>
       <div className={styles.menuWrap}>
-        <NavLink exact to="/" activeClassName={styles.currentPage}>
+        <a onClick={() => handleGoPosition(1550)}>
           VISION FOR CHINA <br />
           ENERGY MARKETS
-        </NavLink>
-        <NavLink exact to="/" activeClassName={styles.currentPage}>
+        </a>
+        <a onClick={() => handleGoPosition(3000)}>
           MANAGEMENT
           <br />
           TEAM
-        </NavLink>
-        <NavLink exact to="/" activeClassName={styles.currentPage}>
+        </a>
+        <a onClick={() => handleGoPosition(3970)}>
           IBA
-        </NavLink>
-        <NavLink exact to="/" activeClassName={styles.currentPage}>
+        </a>
+        <a onClick={() => handleGoPosition(4600)}>
           JOIN OUR TEAM
-        </NavLink>
-        <NavLink exact to="/" activeClassName={styles.currentPage}>
+        </a>
+        <a onClick={() => handleGoPosition(6000)}>
           CONTACT
-        </NavLink>
-        <img src={SearchIcon} alt="" />
+        </a>
+        {/*<img src={SearchIcon} alt="" />*/}
       </div>
     </div>
   );
