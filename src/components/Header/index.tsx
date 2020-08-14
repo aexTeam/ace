@@ -37,7 +37,7 @@ export default () => {
           <br />
           TEAM
         </a>
-        <a onClick={() => handleGoPosition(3970)}>
+        <a onClick={() => handleGoPosition(3950)}>
           IBA
         </a>
         <a onClick={() => handleGoPosition(4600)}>
