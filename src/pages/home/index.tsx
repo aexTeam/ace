@@ -19,10 +19,11 @@ import PositionImg3 from '@/assets/position-3.png';
 import UserIcon from '@/assets/user.png';
 import PositionSeparator from '@/assets/position-separator.png';
 import CalendarIcon from '@/assets/calendar.png';
-import Line1 from '@/assets/line-1.png';
-import Line2 from '@/assets/line-2.png';
-import Line3 from '@/assets/line-3.png';
-import Line4 from '@/assets/line-4.png';
+import Line from '@/assets/line.png';
+// import Line1 from '@/assets/line-1.png';
+// import Line2 from '@/assets/line-2.png';
+// import Line3 from '@/assets/line-3.png';
+// import Line4 from '@/assets/line-4.png';
 import styles from './index.less';
 
 interface TestProps {
@@ -50,6 +51,7 @@ const Index: React.FC<TestProps> = props => {
         </div>
         <div className={styles.arrowWrap}>
           <img src={HomeArrow} alt="" />
+          <img src={Line} alt="" />
           {/*<img src={Line1} alt="" />*/}
           {/*<img src={Line2} alt="" />*/}
           {/*<img src={Line3} alt="" />*/}
@@ -59,7 +61,7 @@ const Index: React.FC<TestProps> = props => {
 
 
       <div className={styles.part2}>
-        <div className={`${styles.title} ${styles.left}`} style={{ paddingTop: '150px' }}>
+        <div className={`${styles.title} ${styles.left}`} style={{ paddingTop: '120px' }}>
           To achieve this we want to <span className={styles.arrow}></span>
         </div>
         <div className={styles.inner}>
@@ -243,7 +245,7 @@ const Index: React.FC<TestProps> = props => {
 
       <div className={styles.positionsWrap}>
         <div>
-          <img src={PositionImg1} alt="" />
+          <a href="/aex/file/test.pdf" target="_blank"><img src={PositionImg1} alt="" /></a>
           <div className={styles.brief}>
             Content Writer with <br />
             Social Media Experience - <br />

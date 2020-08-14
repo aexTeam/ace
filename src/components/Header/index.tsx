@@ -28,7 +28,7 @@ export default () => {
         {/*<img onClick={() => handleChangeLang('en-US')} src={UkFlag} alt="" />*/}
       </div>
       <div className={styles.menuWrap}>
-        <a onClick={() => handleGoPosition(1550)}>
+        <a onClick={() => handleGoPosition(1520)}>
           VISION FOR CHINA <br />
           ENERGY MARKETS
         </a>
