@@ -5,9 +5,8 @@ export default () => {
   return (
     <div className={styles.footerWrapper} id="contact">
       <div>
-        <span>CONTACT US</span>
-        <span style={{ margin: '0 30px' }}>Email</span>
-        <label>info@aexmarkets.com</label>
+        <span>CONTACT US:</span>
+        <label> info@aexmarkets.com</label>
       </div>
       <div>2020 ©. AEX. All Rights Reserved | Privacy policy</div>
     </div>

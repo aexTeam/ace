@@ -45,9 +45,9 @@ const Index: React.FC<TestProps> = props => {
           <br />
           THE GROWTH AND MATURATION OF
           <br />
-          CHINA IS RAPIDLY DEVELOPING
+          CHINA'S RAPIDLY DEVELOPING
           <br />
-          ENERGY MARKETS
+          EMISSIONS AND POWER MARKETS
         </div>
         <div className={styles.arrowWrap}>
           <img src={HomeArrow} alt="" />
@@ -62,7 +62,7 @@ const Index: React.FC<TestProps> = props => {
 
       <div className={styles.part2}>
         <div className={`${styles.title} ${styles.left}`} style={{ paddingTop: '120px' }}>
-          To achieve this we want to <span className={styles.arrow}></span>
+          AEX wants to <span className={styles.arrow}></span>
         </div>
         <div className={styles.inner}>
           <div className={styles.featureItem}>
@@ -102,7 +102,7 @@ const Index: React.FC<TestProps> = props => {
           <img src={VisionImg} alt="" />
         </div>
         <div>
-          <div style={{ marginBottom: '90px' }}>
+          <div style={{ marginBottom: '60px' }}>
             In mature emissions and power markets, the spot market is embedded in an ecosystem that lets market participants manage risk and run efficient trading operations.
           </div>
           <div>
@@ -117,7 +117,9 @@ const Index: React.FC<TestProps> = props => {
       <div className={styles.part4}>
 
         <div style={{ paddingLeft: '60px' }}>
-          Our team and advisors combine a full range of relevant experience and skills with a strong network that we can leverage to service our customers.
+          Our team combines a full range of relevant experience and skills. <br/><br/>
+          Our board of advisers and our international network provides additional expertise and
+          contacts.
         </div>
         <img src={Team1} alt="" />
       </div>
@@ -232,7 +234,7 @@ const Index: React.FC<TestProps> = props => {
       </div>
 
       <div className={styles.careerTitle} id="career">
-        <span>Join Our Team</span>
+        <span>Join AEX</span>
       </div>
       <div className={styles.careerContent}>
         We are looking for candidates with entrepreneurial mindset to join our

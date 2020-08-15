@@ -29,22 +29,20 @@ export default () => {
       </div>
       <div className={styles.menuWrap}>
         <a onClick={() => handleGoPosition(1520)}>
-          VISION FOR CHINA <br />
-          ENERGY MARKETS
+          Vision for China<br />
+          Energy Markets
         </a>
-        <a onClick={() => handleGoPosition(3000)}>
-          MANAGEMENT
-          <br />
-          TEAM
+        <a onClick={() => handleGoPosition(2150)}>
+          Team
         </a>
-        <a onClick={() => handleGoPosition(3950)}>
-          IBA
-        </a>
+        {/*<a onClick={() => handleGoPosition(3950)}>*/}
+        {/*  IBA*/}
+        {/*</a>*/}
         <a onClick={() => handleGoPosition(4600)}>
-          JOIN OUR TEAM
+          Join AEX
         </a>
         <a onClick={() => handleGoPosition(6000)}>
-          CONTACT
+          Contact
         </a>
         {/*<img src={SearchIcon} alt="" />*/}
       </div>
