@@ -174,7 +174,7 @@ const Index: React.FC<TestProps> = props => {
             fluent Chinese
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/paola-valinotti/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jonas-nart/" target="_blank">LinkedIn</a>
           </li>
         </ul>
         <div style={{ padding: '0px 55px 0px 10px' }}>
@@ -258,9 +258,9 @@ const Index: React.FC<TestProps> = props => {
             <span>HR</span>
             <img src={PositionSeparator} alt="" />
             <img src={CalendarIcon} alt="" />
-            <span>29 MAY 2020</span>
-            <img src={PositionSeparator} alt="" />
-            <span>2</span>
+            <span>1 Aug 2020</span>
+            {/*<img src={PositionSeparator} alt="" />*/}
+            {/*<span>2</span>*/}
           </div>
         </div>
 
@@ -275,9 +275,9 @@ const Index: React.FC<TestProps> = props => {
             <span>HR</span>
             <img src={PositionSeparator} alt="" />
             <img src={CalendarIcon} alt="" />
-            <span>29 MAY 2020</span>
-            <img src={PositionSeparator} alt="" />
-            <span>2</span>
+            <span>1 Jul 2020</span>
+            {/*<img src={PositionSeparator} alt="" />*/}
+            {/*<span>2</span>*/}
           </div>
         </div>
 
@@ -289,9 +289,9 @@ const Index: React.FC<TestProps> = props => {
             <span>HR</span>
             <img src={PositionSeparator} alt="" />
             <img src={CalendarIcon} alt="" />
-            <span>29 MAY 2020</span>
-            <img src={PositionSeparator} alt="" />
-            <span>2</span>
+            <span>1 Aug 2020</span>
+            {/*<img src={PositionSeparator} alt="" />*/}
+            {/*<span>2</span>*/}
           </div>
         </div>
       </div>
