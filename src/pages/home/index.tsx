@@ -41,13 +41,12 @@ const Index: React.FC<TestProps> = props => {
     <div className={styles.homeContent}>
       <div className={styles.part1}>
         <div className={styles.info}>
-          AEX IS DEDICATED TO SUPPORT
+          AEX IS COMMITTED TO
           <br />
-          THE GROWTH AND MATURATION OF
+          HELP CREATE A SUCCESSFUL
           <br />
-          CHINA'S RAPIDLY DEVELOPING
-          <br />
-          EMISSIONS AND POWER MARKETS
+          FORWARD MARKET FOR  <br/>
+          EMISSIONS AND POWER IN CHINA
         </div>
         <div className={styles.arrowWrap}>
           <img src={HomeArrow} alt="" />
@@ -62,7 +61,7 @@ const Index: React.FC<TestProps> = props => {
 
       <div className={styles.part2}>
         <div className={`${styles.title} ${styles.left}`} style={{ paddingTop: '120px' }}>
-          AEX wants to <span className={styles.arrow}></span>
+          Success through collaboration <span className={styles.arrow}></span>
         </div>
         <div className={styles.inner}>
           <div className={styles.featureItem}>
@@ -103,7 +102,7 @@ const Index: React.FC<TestProps> = props => {
         </div>
         <div>
           <div style={{ marginBottom: '60px' }}>
-            In mature emissions and power markets, the spot market is embedded in an ecosystem that lets market participants manage risk and run efficient trading operations.
+            In mature emissions and power markets, the spot market is embedded in an ecosystem that enables market participants to manage risk and run efficient trading operations.
           </div>
           <div>
             AEX is committed to help build this ecosystem to contribute to the success of China emissions and power markets.
@@ -116,10 +115,9 @@ const Index: React.FC<TestProps> = props => {
       </div>
       <div className={styles.part4}>
 
-        <div style={{ paddingLeft: '60px' }}>
-          Our team combines a full range of relevant experience and skills. <br/><br/>
-          Our board of advisers and our international network provides additional expertise and
-          contacts.
+        <div style={{ paddingLeft: '0px' }}>
+          The AEX team comprises deeply experienced and internationally recognized leaders in the field of environmental markets and power trading.<br/><br/>
+          We amplify our team's strengths and expertise through our extensive international and local network of individuals and organizations in exchanges, power trading and utilities, service providers and financial institutions.
         </div>
         <img src={Team1} alt="" />
       </div>
@@ -138,19 +136,20 @@ const Index: React.FC<TestProps> = props => {
         <ul>
           <li>
             Former Managing Director Greater China for international commodity
-            exchange 2010-2016, VP Asia for Chicago Climate Exchange (CCX)
+            exchange 2010-2016, VP Asia for Chicago Climate Exchange (CCX), Former Chief Advisor for Chongqing Gas Exchange
           </li>
           <li>
-            10+ years experience in cross-border M&A and Joint Venture Tianjin
-            Climate Exchange (CCX & CNPC/PetroChina), Citic & Calyon (SocGen)
-            futures brokerage joint venture, SunGard Fintech acquisition
+            10+ years experience in cross-border M&A and Joint Venture
+            <div style={{fontSize: '16px', lineHeight: 1.5}}>
+              Tianjin Climate Exchange (CCX & CNPC/PetroChina), Citic & Calyon (SocGen) futures brokerage joint venture, SunGard Fintech acquisition
+            </div>
           </li>
-          <li>Former Chief Advisor for Chongqing Gas Exchange</li>
+          <li>Member of Greater-Bay Area (GBA) Carbon Connect Working Group</li>
           <li>
             Well-known expert in China energy and CO2 markets, frequent speaker
             and lecturer in conferences and in universities, regular presence on
             <a href="http://opinion.caixin.com/huangjiefu_mjxx/" target="_blank">Caixin opinion, </a>
-            <a href="http://opinion.caixin.com/huangjiefu_mjxx/" target="_blank">Weibo</a>
+            <a href="http://weibo.com/carbonjeff" target="_blank">Weibo</a>
           </li>
         </ul>
       </div>
@@ -174,17 +173,17 @@ const Index: React.FC<TestProps> = props => {
             fluent Chinese
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/jonas-nart/" target="_blank">LinkedIn</a>
+            <a style={{marginLeft: 0}} href="https://www.linkedin.com/in/jonas-nart/" target="_blank">LinkedIn</a>
           </li>
         </ul>
         <div style={{ padding: '0px 55px 0px 10px' }}>
           <img src={Team3} alt="" />
-          <div>Jonas Nart / 纳杰安 -</div>
+          <div>Jonas Nart / 纳杰安 </div>
         </div>
       </div>
       <div className={styles.nameLine}>
         <span>
-          Founding Partner VP Power Markets <br /> and Data Analytics
+          Founding Partner <br /> VP Power Markets & Data Analytics
         </span>
       </div>
 
@@ -210,6 +209,12 @@ const Index: React.FC<TestProps> = props => {
             </div>
           </li>
           <li>
+            Christine Loh
+            <div>
+              Chief Development Strategist, Institute for the Environment, Hong Kong University of Science and Technology.
+            </div>
+          </li>
+          <li>
             Ronald Oppenheimer
             <div>
               Former general counsel for Vitol Group, Merrill Lynch, NYMEX; board/committee member for CFTC, ICE, NFA
@@ -226,8 +231,13 @@ const Index: React.FC<TestProps> = props => {
           <li>
             Thomas Reithofer
             <div>
-              Head of energy division & member of executive board at CKW (Swiss
-              utility), chairman for supplier, board member for hydro generators
+              Head of energy division & member of executive board at CKW (Swiss utility),​ ​board chairman and member for power supplier and generation companies
+            </div>
+          </li>
+          <li>
+            Paula DiPerna
+            <div>
+              Special advisor to CDP (Carbon Disclosure Project) and advisor for environmental finance to Do-Conomy; former President at CCX International; President/VP of Cousteau Society and Joyce Foundation
             </div>
           </li>
         </ul>
@@ -240,7 +250,7 @@ const Index: React.FC<TestProps> = props => {
         We are looking for candidates with entrepreneurial mindset to join our
         international team in <br />
         Hong Kong and Mainland China. Please send your application to{' '}
-        <a href="">recruiting@aexmarkets.com.</a>
+        recruiting@aexmarkets.com.
       </div>
 
       <div className={styles.positionsTitle}>Open Positions:</div>

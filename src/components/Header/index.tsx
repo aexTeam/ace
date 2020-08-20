@@ -29,8 +29,7 @@ export default () => {
       </div>
       <div className={styles.menuWrap}>
         <a onClick={() => handleGoPosition(1520)}>
-          Vision for China<br />
-          Energy Markets
+          Vision
         </a>
         <a onClick={() => handleGoPosition(2150)}>
           Team
