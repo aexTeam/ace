@@ -247,7 +247,7 @@ const Index: React.FC<TestProps> = props => {
         <span>Join AEX</span>
       </div>
       <div className={styles.careerContent}>
-        We are looking for candidates with entrepreneurial mindset to join our
+        We are looking for candidates with entrepreneurial mindsets to join our
         international team in <br />
         Hong Kong and Mainland China. Please send your application to{' '}
         recruiting@aexmarkets.com.
