@@ -3,29 +3,30 @@ import React, { useEffect, useState } from 'react';
 import { connect, Dispatch } from 'umi';
 import { ConnectState } from '@/models/connect';
 import HomeArrow from '@/assets/home-arrow.png';
-import FeatureIcon1 from '@/assets/feature-icon-1.png';
-import FeatureIcon2 from '@/assets/feature-icon-2.png';
-import FeatureIcon3 from '@/assets/feature-icon-3.png';
-import FeatureContent1 from '@/assets/feature-content-1.png';
-import FeatureContent2 from '@/assets/feature-content-2.png';
-import FeatureContent3 from '@/assets/feature-content-3.png';
-import Team1 from '@/assets/team-1.png';
+import FeatureIcon1 from '@/assets/mobile/feature-icon-1.png';
+import FeatureIcon2 from '@/assets/mobile/feature-icon-2.png';
+import FeatureIcon3 from '@/assets/mobile/feature-icon-3.png';
+import FeatureContent1 from '@/assets/mobile/feature-content-1.png';
+import FeatureContent2 from '@/assets/mobile/feature-content-2.png';
+import FeatureContent3 from '@/assets/mobile/feature-content-3.png';
+import Team1 from '@/assets/mobile/team-1.png';
 import Team2 from '@/assets/team-2.jpg';
 import Team3 from '@/assets/team-3.png';
-import VisionImg from '@/assets/vision.png';
+import VisionImg from '@/assets/mobile/vision.png';
 import PositionImg1 from '@/assets/position-1.png';
 import PositionImg2 from '@/assets/position-2.png';
 import PositionImg3 from '@/assets/position-3.png';
 import UserIcon from '@/assets/user.png';
 import PositionSeparator from '@/assets/position-separator.png';
 import CalendarIcon from '@/assets/calendar.png';
+import Logo from "@/assets/logo.png";
 import Line from '@/assets/line.png';
 // import Line1 from '@/assets/line-1.png';
 // import Line2 from '@/assets/line-2.png';
 // import Line3 from '@/assets/line-3.png';
 // import Line4 from '@/assets/line-4.png';
 // test
-import styles from './index.less';
+import styles from './index-mobile.less';
 
 interface TestProps {
   dispatch: Dispatch;
@@ -42,39 +43,42 @@ const Index: React.FC<TestProps> = props => {
     <div className={styles.homeContent}>
       <div className={styles.part1}>
         <div className={styles.info}>
-          AEX IS COMMITTED TO
+          <img className={styles.logo} src={Logo} alt="" /> <br/>
+          AEX IS COMMITTED TO HELP
           <br />
-          HELP CREATE A SUCCESSFUL
+           CREATE A SUCCESSFUL FORWARD
           <br />
-          FORWARD MARKET FOR  <br/>
-          EMISSIONS AND POWER IN CHINA
-        </div>
-        <div className={styles.arrowWrap}>
-          <img src={HomeArrow} alt="" />
-          <img src={Line} alt="" />
-          {/*<img src={Line1} alt="" />*/}
-          {/*<img src={Line2} alt="" />*/}
-          {/*<img src={Line3} alt="" />*/}
-          {/*<img src={Line4} alt="" />*/}
+           MARKET FOR EMISSIONS AND  <br/>
+           POWER IN CHINA
         </div>
       </div>
 
 
       <div className={styles.part2}>
-        <div className={`${styles.title} ${styles.left}`} style={{ paddingTop: '120px' }}>
+        <div className={`${styles.title} ${styles.left}`}>
           Success through collaboration <span className={styles.arrow}></span>
         </div>
         <div className={styles.inner}>
-          <div className={styles.featureItem}>
-            <div>
-              <img src={FeatureIcon1} alt="" />
+          <div>
+            <div className={`${styles.featureItem} ${styles.item1}`}>
+              <div>
+                <img src={FeatureIcon1} alt="" />
+              </div>
+              <div>
+                <img src={FeatureContent1} alt=""/>
+              </div>
             </div>
-            <div>
-              <img src={FeatureContent1} alt=""/>
+            <div className={`${styles.featureItem} ${styles.item3}`}>
+              <div>
+                <img src={FeatureIcon3} alt="" />
+              </div>
+              <div>
+                <img src={FeatureContent3} alt=""/>
+              </div>
             </div>
           </div>
 
-          <div className={styles.featureItem}>
+          <div className={`${styles.featureItem} ${styles.item2}`}>
             <div>
               <img src={FeatureIcon2} alt="" />
             </div>
@@ -83,31 +87,25 @@ const Index: React.FC<TestProps> = props => {
             </div>
           </div>
 
-          <div className={styles.featureItem}>
-            <div>
-              <img src={FeatureIcon3} alt="" />
-            </div>
-            <div>
-              <img src={FeatureContent3} alt=""/>
-            </div>
-          </div>
+
         </div>
       </div>
 
-      <div className={styles.title} style={{paddingTop: '70px'}} id="markets">
+      <div className={styles.title} id="markets">
         <span className={styles.arrow}></span>Our Vision for China Energy Markets
       </div>
       <div className={styles.part3}>
         <div>
-          <img src={VisionImg} alt="" />
-        </div>
-        <div>
-          <div style={{ marginBottom: '60px' }}>
-            In mature emissions and power markets, the spot market is embedded in an ecosystem that enables market participants to manage risk and run efficient trading operations.
-          </div>
-          <div>
+          <div style={{paddingRight: '1rem'}}>
             AEX is committed to help build this ecosystem to contribute to the success of China emissions and power markets.
           </div>
+          <div style={{paddingLeft: '1rem'}}>
+            In mature emissions and power markets, the spot market is embedded in an ecosystem that enables market participants to manage risk and run efficient trading operations.
+          </div>
+        </div>
+
+        <div>
+          <img src={VisionImg} alt="" />
         </div>
       </div>
 
@@ -115,21 +113,35 @@ const Index: React.FC<TestProps> = props => {
         Team Introduction<span className={styles.arrow}></span>
       </div>
       <div className={styles.part4}>
-
-        <div style={{ paddingLeft: '0px' }}>
-          The AEX team comprises deeply experienced and internationally recognized leaders in the field of environmental markets and power trading.<br/><br/>
-          We amplify our team's strengths and expertise through our extensive international and local network of individuals and organizations in exchanges, power trading and utilities, service providers and financial institutions.
+        <div>
+          <p style={{paddingRight: '1rem'}}>
+            The AEX team comprises deeply experienced and internationally recognized leaders in the field of environmental markets and power trading.
+          </p>
+          <p>
+            We amplify our team's strengths <br/>
+            and expertise through our <br/>
+            extensive international and <br/>
+            local network of individuals <br/>
+            and organizations in <br/>
+            exchanges, power <br/>
+            trading and utilities, <br/>
+            service providers <br/>
+            and financial <br/>
+            institutions. <br/>
+          </p>
         </div>
-        <img src={Team1} alt="" />
+        <div>
+          <img src={Team1} alt="" />
+        </div>
       </div>
 
-      <div className={`${styles.title}`} style={{ paddingBottom: '58px' }} id="team">
+      <div className={`${styles.title}`} style={{ paddingBottom: '3rem' }} id="team">
         <span className={styles.arrow}></span>Management Team
       </div>
-      <div className={styles.part5} style={{ marginBottom: '35px' }}>
+      <div className={styles.part5} style={{ marginBottom: '15px' }}>
         <div>
           <img src={Team2} alt="" />
-          <div>
+          <div style={{width: '11rem'}}>
             Jeff Huang / 黄杰夫 <br />
             Founder and CEO
           </div>
@@ -141,7 +153,7 @@ const Index: React.FC<TestProps> = props => {
           </li>
           <li>
             10+ years experience in cross-border M&A and Joint Venture
-            <div style={{fontSize: '16px', lineHeight: 1.5}}>
+            <div style={{fontSize: '1rem', color: '#888'}}>
               Tianjin Climate Exchange (CCX & CNPC/PetroChina), Citic & Calyon (SocGen) futures brokerage joint venture, SunGard Fintech acquisition
             </div>
           </li>
@@ -155,8 +167,8 @@ const Index: React.FC<TestProps> = props => {
         </ul>
       </div>
 
-      <div className={styles.part5}>
-        <ul style={{ paddingTop: '20px' }}>
+      <div className={styles.part5} style={{alignItems: 'flex-end'}}>
+        <ul>
           <li>
             Former spot power trader and asset manager for Swiss generator
             (nuclear and hydro) and supplier (direct retail, resellers,
@@ -177,16 +189,17 @@ const Index: React.FC<TestProps> = props => {
             <a style={{marginLeft: 0}} href="https://www.linkedin.com/in/jonas-nart/" target="_blank">LinkedIn</a>
           </li>
         </ul>
-        <div style={{ padding: '0px 55px 0px 10px' }}>
+        <div>
           <img src={Team3} alt="" />
-          <div>Jonas Nart / 纳杰安 </div>
+          <div style={{width: '13rem'}}>
+            Jonas Nart / 纳杰安
+            Founding Partner <br />
+            VP Power Markets & <br/>
+            Data Analytics
+          </div>
         </div>
       </div>
-      <div className={styles.nameLine}>
-        <span>
-          Founding Partner <br /> VP Power Markets & Data Analytics
-        </span>
-      </div>
+
 
       <div className={`${styles.title} ${styles.left}`} id="iba">
         Board of International Advisors<span className={styles.arrow}></span>
@@ -248,10 +261,11 @@ const Index: React.FC<TestProps> = props => {
         <span>Join AEX</span>
       </div>
       <div className={styles.careerContent}>
-        We are looking for candidates with entrepreneurial mindsets to join our
-        international team in <br />
-        Hong Kong and Mainland China. Please send your application to{' '}
-        recruiting@aexmarkets.com.
+        We are looking for candidates with entrepreneurial mindsets to join our inter- <br/>
+        national team in Hong Kong and Mainland China. Please send your application to
+        <div>
+          recruiting@aexmarkets.com.
+        </div>
       </div>
 
       <div className={styles.positionsTitle}>Open Positions:</div>
@@ -259,50 +273,51 @@ const Index: React.FC<TestProps> = props => {
       <div className={styles.positionsWrap}>
         <div>
           <a href="/aex/file/test.pdf" target="_blank"><img src={PositionImg1} alt="" /></a>
-          <div className={styles.brief}>
-            Content Writer with <br />
-            Social Media Experience - <br />
-            Hong Kong or Mainland China
-          </div>
-          <div className={styles.date}>
-            <img src={UserIcon} alt="" />
-            <span>HR</span>
-            <img src={PositionSeparator} alt="" />
-            <img src={CalendarIcon} alt="" />
-            <span>1 Aug 2020</span>
-            {/*<img src={PositionSeparator} alt="" />*/}
-            {/*<span>2</span>*/}
+          <div>
+            <div className={styles.brief}>
+              Content Writer with <br />
+              Social Media Experience - <br />
+              Hong Kong or Mainland China
+            </div>
+            <div className={styles.date}>
+              <img src={UserIcon} alt="" />
+              <span>HR</span>
+              <img src={PositionSeparator} alt="" />
+              <img src={CalendarIcon} alt="" />
+              <span>1 Aug 2020</span>
+            </div>
           </div>
         </div>
 
-        <div style={{ margin: '0 54px' }}>
-          <img src={PositionImg2} alt="" />
-          <div className={styles.brief}>
-            Junior Data Analyst -<br />
-            Hong Kong or Mainland China
-          </div>
-          <div className={styles.date}>
-            <img src={UserIcon} alt="" />
-            <span>HR</span>
-            <img src={PositionSeparator} alt="" />
-            <img src={CalendarIcon} alt="" />
-            <span>1 Jul 2020</span>
-            {/*<img src={PositionSeparator} alt="" />*/}
-            {/*<span>2</span>*/}
+        <div style={{margin: '0.3rem 0'}}>
+          <a href="/aex/file/test.pdf" target="_blank"><img src={PositionImg2} alt="" /></a>
+          <div>
+            <div className={styles.brief}>
+              Junior Data Analyst -<br />
+              Hong Kong or Mainland China
+            </div>
+            <div className={styles.date}>
+              <img src={UserIcon} alt="" />
+              <span>HR</span>
+              <img src={PositionSeparator} alt="" />
+              <img src={CalendarIcon} alt="" />
+              <span>1 Jul 2020</span>
+            </div>
           </div>
         </div>
 
         <div>
-          <img src={PositionImg3} alt="" />
-          <div className={styles.brief}>Executive Assistant - Hong Kong</div>
-          <div className={styles.date}>
-            <img src={UserIcon} alt="" />
-            <span>HR</span>
-            <img src={PositionSeparator} alt="" />
-            <img src={CalendarIcon} alt="" />
-            <span>1 Aug 2020</span>
-            {/*<img src={PositionSeparator} alt="" />*/}
-            {/*<span>2</span>*/}
+          <a href="/aex/file/test.pdf" target="_blank"><img src={PositionImg3} alt="" /></a>
+          <div>
+            <div className={styles.brief}>Executive Assistant - <br/>
+              Hong Kong</div>
+            <div className={styles.date}>
+              <img src={UserIcon} alt="" />
+              <span>HR</span>
+              <img src={PositionSeparator} alt="" />
+              <img src={CalendarIcon} alt="" />
+              <span>1 Aug 2020</span>
+            </div>
           </div>
         </div>
       </div>

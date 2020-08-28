@@ -1,0 +1,328 @@
+.homeContent {
+  position: relative;
+  padding: 1.3rem 0.8rem 0px 0.5rem;
+}
+.part1 {
+  background: url("../../assets/mobile/home-banner.png") no-repeat right;
+  height: 20.8rem;
+  display: flex;
+  align-items: center;
+  background-size: 26rem 20.8rem;
+  margin-bottom: 2rem;
+}
+.info {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.7;
+  color: #474747;
+  text-align: left;
+  .logo {
+    width: 9.2rem;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+.title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #282828;
+  .arrow {
+    display: inline-block;
+    margin: 0 0.8rem;
+    width: 1rem;
+    height: 1rem;
+    background: url("../../assets/arrow-right.png") no-repeat;
+    background-size: contain;
+  }
+}
+.title.left {
+  justify-content: flex-start;
+  .arrow {
+    background: url("../../assets/arrow-left.png") no-repeat;
+    background-size: contain;
+  }
+}
+.part2 {
+  position: relative;
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 52.6rem;
+    background-image: url('../../assets/mobile/feature-map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    >div {
+      width: 50%;
+    }
+
+    .featureItem.item1 {
+      background: url('../../assets/mobile/feature-1.png') no-repeat;
+      background-size: contain;
+      margin-bottom: 2.6rem;
+    }
+    .featureItem.item2 {
+      background: url('../../assets/mobile/feature-2.png') no-repeat;
+      background-size: contain;
+    }
+    .featureItem.item3 {
+      background: url('../../assets/mobile/feature-3.png') no-repeat;
+      background-size: contain;
+    }
+  }
+}
+.featureItem {
+  display: flex;
+  //width: 19.3rem;
+  height: 24rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > div:first-child {
+    margin-top: -2rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0.3rem;
+    img {
+      width: 3.9rem;
+      height: 3.9rem;
+    }
+  }
+  > div:last-child {
+    //padding: 22px 64px 0 63px;
+    line-height: 1.2;
+    img {
+      width: 11.2rem;
+    }
+  }
+}
+
+.part3 {
+  > div:first-child {
+    padding: 0 1rem 0.5rem 1rem;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(4, 132, 128, 1);
+    line-height: 1.6;
+  }
+  > div:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100vw - 1rem);
+    height: calc(100vw - 1rem);
+    background: url('../../assets/mobile/vision-bg.png') no-repeat center;
+    background-size: cover;
+    img {
+      width: calc(100vw - 2rem);
+      height: calc(100vw - 2rem);
+      //margin: 1px 9px;
+    }
+  }
+}
+
+.part4 {
+  > div:first-child {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(4, 132, 128, 1);
+    line-height: 1.63;
+    >p:first-child {
+      width: 46%;
+    }
+    >p:last-child {
+      padding-left: 1rem;
+      position: relative;
+      text-align: right;
+      margin-top: -6.4rem;
+      top: 8.8rem;
+    }
+  }
+  > div:last-child {
+    padding: 0 4rem 0 1rem;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.part5 {
+  display: flex;
+  line-height: 1em;
+  align-items: center;
+  > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+    img {
+      margin-bottom: 1.2rem;
+      width: 8.5rem;
+    }
+  }
+  ul {
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.15em;
+    font-weight: 400;
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0;
+    li {
+      position: relative;
+      padding-left: 0.8rem;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 100%;
+        background: #000000;
+        left: 0;
+        top: 0.5rem;
+      }
+      a {
+        margin-left: 0.8rem;
+        color: #001EFF;
+      }
+    }
+  }
+}
+
+.nameLine {
+  font-size: 10px;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1);
+  overflow: hidden;
+  margin-top: -15px;
+  span {
+    float: right;
+    text-align: center;
+    margin-right: 10px;
+  }
+}
+
+.part6 {
+  ul {
+    font-weight: 400;
+    line-height: 1em;
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 0;
+    li {
+      position: relative;
+      padding-left: 0.8rem;
+      font-size: 1.3rem;
+      color: #282828;
+      font-weight: bold;
+      div {
+        color: #282828;
+        font-size: 1.3rem;
+        font-weight: normal;
+        margin: 0.5rem 0;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 0.4rem;
+        height: 0.4rem;
+        border-radius: 100%;
+        background: #000000;
+        left: 0;
+        top: 0.5rem;
+      }
+    }
+  }
+}
+
+.careerTitle {
+  margin: 10px auto 10px;
+  font-size: 1.4rem;
+  font-family: Arial;
+  text-align: center;
+  span {
+    position: relative;
+    //display: inline-block;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -9px;
+      left: 18px;
+      width: 19px;
+      height: 7px;
+      background: url("../../assets/career-icon.png") no-repeat;
+      background-size: contain;
+    }
+  }
+}
+.careerContent {
+  font-size: 1rem;
+  line-height: 1.5em;
+  text-align: right;
+  padding-right: 1.5rem;
+  div {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+.positionsTitle {
+  margin: 15px auto 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.positionsWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+  & > div {
+    display: flex;
+    align-items: center;
+    & > a {
+      margin-left: 2.3rem;
+      img {
+        width: 14rem;
+      }
+    }
+    .brief {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.2em;
+      height: 35px;
+      margin: 6px auto;
+      padding-left: 1.5rem;
+    }
+    .date {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+      font-size: 1rem;
+      align-items: center;
+      color: #999;
+      padding-left: 1.5rem;
+      padding-right: 2rem;
+      img {
+        height: 1rem;
+      }
+    }
+  }
+}

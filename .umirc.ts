@@ -1,8 +1,8 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  base: '/aex/',
-  publicPath: '/aex/',
+  // base: '/aex/',
+  // publicPath: '/aex/',
   hash: true,
   // antd: {},
   dynamicImport: {},
@@ -11,8 +11,18 @@ export default defineConfig({
   },
   routes: [
     {
+      path: '/mobile',
+      component: '@/layouts/Basic-mobile',
+      wrappers: ['@/wrappers/device'],
+      routes: [
+        { path: '/mobile',title: '首页', component: '@/pages/home/index-mobile' },
+        { title: '页面不存在', component: '@/pages/404/index'},
+      ],
+    },
+    {
       path: '/',
       component: '@/layouts/Basic',
+      wrappers: ['@/wrappers/device'],
       routes: [
         { path: '/',title: '首页', component: '@/pages/home/index' },
         { title: '页面不存在', component: '@/pages/404/index'},

@@ -40,7 +40,6 @@ export const flattenObj = function(obj: any){
   return result;
 }
 
-
 export const isIOS = () => {
   const ua = navigator.userAgent.toLowerCase()
   if (/iphone|ipad|ipod/.test(ua)) {
@@ -50,18 +49,4 @@ export const isIOS = () => {
   return false
 }
 
-export const isAndroid = () => {
-  const ua = navigator.userAgent.toLowerCase()
-  if (/(android)/i.test(ua)) {
-    // console.log('安卓终端设备')
-    return true
-  }
-  return false
-}
-export const isPC = () => {
-  if( !isIOS() && !isAndroid() ){
-    return true
-  }
-  return false
-}
-
+export const isMobile = () => navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)
