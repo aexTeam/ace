@@ -10,6 +10,7 @@ export default defineConfig({
     type: 'none',
   },
   routes: [
+    { path: '/test',title: '测试页面', component: '@/pages/test/index' },
     {
       path: '/mobile',
       component: '@/layouts/Basic-mobile',
